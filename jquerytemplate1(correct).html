@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <link
+     rel="shortcut icon" href="http://www.digitalcrafts.com/sites/default/files/favicon.ico" type="image/vnd.microsoft.icon" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Jquery 101</title>
+    <!--why bootstrap: It auto grids so that your web app may be viewed fluidly-->
+    <!--no matter how wide the page is their are 12 columns that can be worked with -->
+    <!--everything works off this system-->
+    <!--prevoiusly <div class="ttt"> instead of "ttt" we can use presorted classes that run through bootstrap css-->
+    
+
+    <!-- Bootstrap!important to add with jquery! -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    
+    <!--primary purpose of Jquery is best for dom manipulation-->
+  
+  
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                 <button class="btn btn-primary" todo="hide">Hide</button>
+                 </div>
+       
+     
+            <div class="col-md-3">
+                 <button class="btn btn-primary" todo="show">Show</button>
+                 </div>
+        </div>
+         <div class="col-md-3">
+                 <button class="btn btn-primary" todo="toggle">Toggle</button>
+                 </div>
+          <div class="col-md-3">
+                 <button class="btn btn-primary" todo="append">Append</button>
+            </div>
+          <div class="col-md-3">
+                 <button class="btn btn-primary" todo="html">HTML</button>
+                 </div>
+            <div class="col-md-3">
+                 <button class="btn btn-primary" todo="css">CSS</button>
+                 </div>
+             <div class="col-md-3">
+                 <button class="btn btn-primary" todo="text">Text</button>
+                 </div>
+             <div class="col-md-3">
+                 <button class="btn btn-primary" todo="image">Image</button>
+                 </div>
+                 </div>
+              
+    
+         <div class="row">    
+               <div class="col-md-3">
+            <button class="btn btn-success thing">Do Something to Me!</button>
+            </div>
+        </div>
+       </div>
+ <script type="text/javascript">
+
+    // <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    // <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    // <!--[if lt IE 9]>
+     
+ 
+    $(document).ready(function(){
+         $('button').click(function(){
+             var theTrick=$(this).attr('todo');
+             if(theTrick=='hide'){
+                    $('.thing').hide();
+             }else if(theTrick=='show'){
+                    $('.thing').show();
+             }else if(theTrick=='toggle'){
+                    $('.thing').toggle();
+             }else if(theTrick=='append'){
+                    $('.thing').append();
+             }else if(theTrick=='html'){
+                    $('.thing').html();
+             }else if(theTrick=='css'){
+                    $('.thing').css();
+             }else if(theTrick=='text'){
+                    $('.thing').();
+             }else if(theTrick=='image'){
+                    $('.thing').image();
+             }
+            //  listener attached to every single button by default when hide or show gets clicked we grab .thing and hide it 
+            
+             
+      
+        });
+    });
+    // bind an event listener(the click listener) to the handler the handler logs the event
+    // document.getElementById('wrapper')
+    // $('#wrapper');
+    // document.getElementsByClassName('row');
+    // $('.row')
+    // document.getElementsByTagName('button');
+    // console.log($('button'));
+    </script>
+    <!--primary purpose of Jquery is best for dom manipulation-->
+     
+ 
+
+    
+              
+            
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  </body>
+</html>

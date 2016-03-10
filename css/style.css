@@ -1,0 +1,30 @@
+.pics { height:232px;
+width:232px; padding:0; margin:0;
+;
+}
+.pics img { padding:
+15px;
+border: 1px solid #ccc; background-color: #eee;
+width: 200px; height: 200px; top: 0;
+left: 0
+}
+.row{
+    
+}
+#rotating-item-wrapper {
+	position: relative;
+	width: 980px;
+	height: 347px;
+    bottom:0;
+}
+.rotating-item {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.row{
+   
+    position:inline-block;
+}
+button{float:left;}
